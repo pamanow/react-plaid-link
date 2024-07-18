@@ -3,10 +3,11 @@ import React from 'react';
 export interface PlaidAccount {
   id: string;
   name: string;
-  mask: string;
+  mask: null | string;
   type: string;
   subtype: string;
-  verification_status: string;
+  verification_status: null | string;
+  class_type: null | string;
 }
 
 export interface PlaidInstitution {
